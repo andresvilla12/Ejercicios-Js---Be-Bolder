@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+// 12 - Escribir un programa que nos diga si un número dado es primo 
+//(no es divisible por ninguno otro número que no sea él mismo o la unidad).
+
+
+let numero = parseInt(prompt("Ingresa un número:"));
+
+
+function esPrimo(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+if (esPrimo(numero)) {
+  document.write(`${numero} es un número primo.`);
+} else {
+  document.write(`${numero} no es un número primo.`);
+}
+
+</script>

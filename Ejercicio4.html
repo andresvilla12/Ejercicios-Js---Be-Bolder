@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS JS</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//4- Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a.
+
+const frase = prompt("Por favor, introduce una frase:");
+
+// Iniciamos un contador para la letra 'a'
+let contador_a = 0;
+
+
+// La función length devuelve un valor entero que indica la cantidad de caracteres en la cadena de entrada.
+
+for (let i = 0; i < frase.length; i++) {
+    if (frase[i] === 'a' || frase[i] === 'A') {
+        contador_a++;
+    }
+}
+document.write(`La letra 'a' aparece ${contador_a} veces en la frase.`);
+
+</script>

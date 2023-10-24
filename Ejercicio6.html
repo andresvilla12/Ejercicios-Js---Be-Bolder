@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+ 
+    //6-Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales.
+
+    let frase = prompt("Ingrese una frase: ");
+
+    let contador_v =0;
+
+
+    function isVocal(caracter){
+            return'aeiouAEIOU'.includes(caracter);
+    }
+
+    for( i=0 ; i < frase.length; i++){
+
+        if(isVocal(frase[i])){
+            contador_v++;
+        }
+    }
+
+        document.write(`las vocales que aparecen en la frase son: ${contador_v}. ` )
+
+</script>

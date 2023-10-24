@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//10- Escribir un programa que escriba en pantalla los divisores de un número dado.
+
+    let numero = prompt("Ingrese un número: ");
+
+    let numeroEntero = parseInt(numero);
+    
+    document.write(`Los divisores de ${numeroEntero} son:`);
+
+
+    for( i=1; i <= numeroEntero; i++){
+        if(numeroEntero % i === 0){
+           document.write(i);
+        }
+    }
+
+
+</script>

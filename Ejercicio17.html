@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+/* 17 -Escribir un programa que elimine los números, letras mayúsculas y símbolos de una cadena por medio de una o varias
+expresiones regulares (input: ‘Esto eS tex1o 6e re/lenO de 1mpréntas y árchiv0s de te’x|o’ - Output: ‘sto e texo e 
+relen de mprntas y rchivs de texo’)*/
+
+function limpiarCadena(cadena) {
+  
+  let cadenaLimpia = cadena.replace(/[A-Z0-9!@#$%^&*()_+[\]{};':"\\|,.<>?/`~]/g, '');
+  return cadenaLimpia;
+}
+
+
+let entrada = 'Esto eS tex1o 6e re/lenO de 1mpréntas y árchiv0s de te\'x|o';
+
+
+let cadenaLimpia = limpiarCadena(entrada);
+
+// Mostrar el resultado
+document.write(' Entrada: ' + entrada);
+document.write(' Salida: ' +  cadenaLimpia);
+
+
+
+    
+</script>

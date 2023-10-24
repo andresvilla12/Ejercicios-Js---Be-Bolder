@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+// 8- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 
+//(sólo hay que comprobar si lo es por uno de los cuatro).
+
+let numero = parseInt(prompt("Por favor, introduce un número:"));
+
+// Función para comprobar si el número es divisible por un divisor dado
+function esDivisible(numero, divisor) {
+    return numero % divisor === 0;
+}
+
+// Comprobar si el número es divisible por 2, 3, 5 o 7
+if (esDivisible(numero, 2) || esDivisible(numero, 3) || esDivisible(numero, 5) || esDivisible(numero, 7)) {
+    document.write(`${numero} es divisible por al menos uno de los cuatro: 2, 3, 5 o 7.`);
+} else {
+    document.write(`${numero} no es divisible por ninguno de los cuatro: 2, 3, 5 ni 7.`);
+}
+
+
+</script>

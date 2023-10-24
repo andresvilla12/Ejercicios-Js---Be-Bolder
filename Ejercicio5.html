@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+// 5- Escribe un programa que pida una frase y escriba las vocales que aparecen.
+
+
+let frase = prompt("Ingrese una frase: ");
+
+let vocales= '';
+
+for ( i=0; i < frase.length; i++){
+       let caracter = frase[i].toLowerCase();
+       if ('aeiou'.includes(caracter)){
+
+        //+= suma el valor de su derecha a la variable o propiedad de su izquierda y asigna el resultado a la variable
+        //o propiedad de su izquierda
+
+        vocales += caracter;
+   }
+}
+
+document.write("Las vocales que aparecen en la frase son: " + vocales);
+
+
+
+</script>
+

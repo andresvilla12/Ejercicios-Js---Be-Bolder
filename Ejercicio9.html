@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//9- Añadir al ejercicio anterior que nos diga por cuál 
+//de los cuatro es divisible (hay que decir todos por los que es divisible).
+
+const numero = prompt("Ingresa un número:");
+
+// Convertimos el valor ingresado a un número entero
+const numeroEntero = parseInt(numero);
+
+// Variables para mantener un registro de los divisores
+let divisores = [];
+
+// Verificamos si el número es divisible por 2, 3, 5 o 7
+if (numeroEntero % 2 === 0) {
+  divisores.push(2);
+}
+
+if (numeroEntero % 3 === 0) {
+  divisores.push(3);
+}
+
+if (numeroEntero % 5 === 0) {
+  divisores.push(5);
+}
+
+if (numeroEntero % 7 === 0) {
+  divisores.push(7);
+}
+
+if (divisores.length > 0) {
+  document.write(`${numeroEntero} es divisible por los siguientes números: ${divisores.join(', ')}`);
+} else {
+   document.write(`${numeroEntero} no es divisible por ninguno de los números: 2, 3, 5 ni 7.`);
+}
+
+
+</script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+//7 - Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales.
+
+let frase = prompt("Por favor, introduce una frase:");
+
+// Inicializar contadores para cada vocal
+let contadorA = 0;
+let contadorE = 0;
+let contadorI = 0;
+let contadorO = 0;
+let contadorU = 0;
+
+
+function esVocal(caracter) {
+    return 'aeiouAEIOU'.includes(caracter);
+}
+
+// recorremos cada letra de la frase, usaremos tambien un Switch
+for (let i = 0; i < frase.length; i++) {
+    let caracter = frase[i];
+    if (esVocal(caracter)) {
+        switch (caracter.toLowerCase()) {
+            case 'a':
+                contadorA++;
+                break;
+            case 'e':
+                contadorE++;
+                break;
+            case 'i':
+                contadorI++;
+                break;
+            case 'o':
+                contadorO++;
+                break;
+            case 'u':
+                contadorU++;
+                break;
+        }
+    }
+}
+
+// Mostrar los resultados
+document.write(`En la frase ingresada:`);
+document.write(`- Letra 'a' aparece ${contadorA} veces.`);
+document.write(`- Letra 'e' aparece ${contadorE} veces.`);
+document.write(`- Letra 'i' aparece ${contadorI} veces.`);
+document.write(`- Letra 'o' aparece ${contadorO} veces.`);
+document.write(`- Letra 'u' aparece ${contadorU} veces.`);
+
+</script>
+
+

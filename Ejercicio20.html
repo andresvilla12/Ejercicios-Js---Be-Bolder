@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+/* 20- Escribir un programa que filtre las edades mayores a 25 años, de acuerdo con estos datos que deben ser ingresados
+ en un map (input: José - 20, Luisa - 26, Andrea - 24, Daniela - 30, Carlos - 50, Esteban - 29; Output: Luisa - 26,
+Daniela - 30, Carlos - 50, Esteban - 29)*/  
+
+
+
+const edades = new Map([
+  [" José ", 20],
+  [" Luisa ", 26],
+  [" Andrea ", 24],
+  [" Daniela ", 30],
+  [" Carlos ", 50],
+  [" Esteban ", 29]
+]);
+
+
+const edadesFiltradas = new Map();
+
+for (const [nombre, edad] of edades) {
+  if (edad > 25) {
+    edadesFiltradas.set(nombre, edad);
+  }
+}
+
+
+document.write(" Personas mayores de 25 años: ");
+for (const [nombre, edad] of edadesFiltradas) {
+    document.write(`${nombre} - ${edad}`);
+}
+
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+/* 18 -- Escribir un programa que cree un map con los elementos que desee, posteriormente recorrer el map tres veces,
+ la primera vez por medio de su clave (keys), la segunda  por medio de su valor (values) y la tercera por clave y valor. */
+
+
+
+const miMapa = new Map();
+
+miMapa.set("a", 1);
+miMapa.set("b", 2);
+miMapa.set("c", 3);
+miMapa.set("d", 4);
+
+
+document.write("Recorriendo el mapa por claves (keys):");
+for (const clave of miMapa.keys()) {
+    document.write(clave);
+}
+
+
+document.write("\nRecorriendo el mapa por valores (values):");
+for (const valor of miMapa.values()) {
+    document.write(valor);
+}
+
+
+document.write("\nRecorriendo el mapa por clave y valor:");
+for (const [clave, valor] of miMapa) {
+    document.write(`Clave: ${clave}, Valor: ${valor}`);
+}
+
+
+</script>

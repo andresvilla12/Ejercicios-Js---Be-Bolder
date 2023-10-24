@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+   /* 19- Escribir un programa que con el map creado en el punto anterior se setee uno de los valores por medio de set(),
+    además que obtenga uno de los valores por medio de get()*/
+   
+   
+
+const miMapa = new Map();
+
+miMapa.set("a", 1);
+miMapa.set("b", 2);
+miMapa.set("c", 3);
+miMapa.set("d", 4);
+
+
+miMapa.set("b", 5); // Cambiar el valor de "b" a 5
+
+
+const valorC = miMapa.get("c"); 
+
+// Mostrar el mapa actualizado
+document.write("Mapa actualizado:");
+for (const [clave, valor] of miMapa) {
+  document.write(`Clave: ${clave}, Valor: ${valor}`);
+}
+
+document.write("\nEl valor de 'c' es:", valorC);
+
+
+</script>
